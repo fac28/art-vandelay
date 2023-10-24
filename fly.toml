@@ -9,7 +9,7 @@ primary_region = "lhr"
 [build]
 
 [env]
-  DATABASE_PATH = "/data/mydb.sqlite"
+  DB_FILE = "/data/db.sqlite"
 
 [mounts]
   source="art_vandelay_data"
