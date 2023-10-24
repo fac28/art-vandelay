@@ -7,7 +7,8 @@ CREATE TABLE IF NOT EXISTS products (
     quantity INTEGER,
     artist TEXT,
     description TEXT,
-    price INTEGER
+    price INTEGER,
+    date TEXT
 );
 
 COMMIT;
