@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "seed": "DB_FILE=db.sqlite node app/_lib/database/seed.js",
+    "seed fly": "DB_FILE=/data/db.sqlite node app/_lib/database/seed.js",
     "test": "jest --watch",
     "test:e2e": "playwright test",
     "lint": "next lint",
