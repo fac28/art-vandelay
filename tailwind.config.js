@@ -12,6 +12,10 @@ module.exports = {
       },
       colors: {
         secondary: '#F0ECEC',
+        purple: '#6F1D71', // Define your custom purple color
+      },
+      backgroundColor: {
+        purple: 'purple', // Assign the purple color to a class name
       },
     },
   },
