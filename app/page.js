@@ -1,4 +1,3 @@
-import Layout from './layout.js'
 import Image from 'next/image'
 import Link from 'next/link'
 import db from './_lib/database/db.js'
@@ -16,20 +15,30 @@ const getRandomImage = () => {
 
 export default function Home() {
   return (
-    <Layout>
-      <main>
-        <Image
-          priority
-          src={getRandomImage().image.toString()}
-          height={750}
-          width={750}
-          alt=''
-        />
-        <h1>Art Vandelay</h1>
-        <h2>import/export</h2>
+    <main className='bg-purple' style={{ width: '100vw' }}>
+      <div className='flex items-center justify-between'>
+        <div
+          style={{
+            width: '60vw',
+            height: '84vh',
+            display: 'block',
+            overflow: 'hidden',
+            position: 'relative',
+          }}
+        >
+          <Image
+            priority
+            src={getRandomImage().image}
+            layout='fill'
+            objectFit='cover'
+            alt=''
+          />
+        </div>
 
-        <Link href='/listings/'>See the collection</Link>
-      </main>
-    </Layout>
+        <Link className='mx-auto p-4 text-white' href='/listings/'>
+          See the collection
+        </Link>
+      </div>
+    </main>
   )
 }

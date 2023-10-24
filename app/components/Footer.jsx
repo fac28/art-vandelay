@@ -3,7 +3,13 @@ import { FaTwitterSquare, FaInstagram, FaGithubAlt } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='flex items-center justify-between bg-secondary py-3 mt-10'>
+
+    <footer className='flex items-center justify-between bg-secondary py-3 mt-10' style={{
+      
+      height: '8vh',
+    
+    }}>
+
       <div className='px-3'>
         <p>
           <small>All art is really for sale.</small>
