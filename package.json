@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "DB_FILE=db.sqlite next dev",
     "build": "next build",
     "start": "next start",
     "seed": "DB_FILE=db.sqlite node app/_lib/database/seed.js",
@@ -20,6 +20,7 @@
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10",
     "@playwright/test": "^1.39.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
