@@ -8,6 +8,10 @@ primary_region = "lhr"
 
 [build]
 
+[mounts]
+  source="art_vandelay_data"
+  destination="/data"
+
 [http_service]
   internal_port = 3000
   force_https = true
