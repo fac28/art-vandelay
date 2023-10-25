@@ -4,6 +4,7 @@ import { getRandomImage } from './_lib/models/random-image.js'
 
 export default function Home() {
   const isHomePage = true
+
   return (
     <main className='bg-purple' style={{ width: '100vw' }}>
       <div className='flex items-center justify-between'>
