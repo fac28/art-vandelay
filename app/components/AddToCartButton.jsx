@@ -1,44 +1,18 @@
 'use client'
-import React, { useContext, useState, useEffect } from 'react'
-import {CartContext} from '../components/CartProvider'
+import React, { useContext } from 'react'
+import { BasketContext } from '../context/cart.context'
 
-const AddToCartButton = ({ id }) => {
-  const [inCart, setInCart] = useState(false)
-
-  const { items, addToCart, removeFromCart } = useContext(CartContext)
-
-  console.log(items);
-
-  // useEffect(() => {
-  //   const inCart = items.find((item) => item.id === id)
-  //   if (inCart) {
-  //     setInCart(true)
-  //   } else {
-  //     setInCart(false)
-  //   }
-  // }, [items, id])
-
-  // console.log(inCart);
-  const handleAddClick = () => {
-        const inCart = items.find((item) => item.id === id)
-    if (inCart) {
-      setInCart(true)
-      addToCartFromCart(id)
-    } else {
-      setInCart(false)
-    }
+const AddToCartButton = ({ product }) => {
+  const { state, dispatch } = useContext(BasketContext)
+  
+  const addToBasketHandler = (product) => {
+    dispatch({ dispatch: 'Add', article: product })
   }
   return (
     <>
-      {inCart ? (
-        <button onClick={() => removeFromCart(id)} className='button-1'>
-          Remove from cart
-        </button>
-      ) : (
-        <button onClick={() => handleAddClick} className='button-1'>
-          Add to cart
-        </button>
-      )}
+      <button onClick={() => addToBasketHandler(product)} className='button-1'>
+        Add to cart
+      </button>
     </>
   )
 }
