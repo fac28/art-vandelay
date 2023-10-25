@@ -14,13 +14,13 @@ export default function Page() {
   )
 }
 
-const Listing = ({ image, artist, date, price, id }) => {
+const Listing = ({ image, artist, date, price, id, formatted_price }) => {
   return (
     <div>
       <Link href={`/listings/${id}`}>
         <Image src={image} width={500} height={500} alt='A pretty painting' />
       </Link>
-      <p>{price}</p>
+      <p>{formatted_price}</p>
       <p>{artist}</p>
       <p>{date}</p>
       <AddToCartButton />
