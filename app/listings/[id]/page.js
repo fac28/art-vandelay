@@ -25,17 +25,13 @@ const ProductDetails = ({ params }) => {
         <div className='bg-secondary px-4 shadow-lg'>
           <h2 className='py-4 text-white text-3xl'>{product.name}</h2>
           <div className='flex gap-2 justify-center'>
-            <p className='text-sm italic'>
-              {product.artist}
-            </p>
-            <p className='text-sm italic'>
-              {product.date}
-            </p>
+            <p className='text-sm italic'>{product.artist}</p>
+            <p className='text-sm italic'>{product.date}</p>
           </div>
           <p className='mt-4'>{product.description}</p>
           <div className='flex items-center justify-center gap-40 py-6 '>
             <p>
-              <small>{product.price}</small>
+              <small>{product.formatted_price}</small>
             </p>
             <AddToCartButton />
           </div>

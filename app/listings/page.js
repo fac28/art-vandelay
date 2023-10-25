@@ -33,6 +33,7 @@ const Listing = ({ image, artist, date, price, id, name }) => {
           </div>
         </div>
       </div>
+
     </div>
   )
 }
