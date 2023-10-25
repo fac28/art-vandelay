@@ -23,7 +23,7 @@ const Listing = ({ image, artist, date, price, id }) => {
       <p>{price}</p>
       <p>{artist}</p>
       <p>{date}</p>
-      <AddToCartButton />
+      <AddToCartButton id={id} />
     </div>
   )
 }
