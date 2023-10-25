@@ -17,6 +17,9 @@ module.exports = {
       backgroundColor: {
         purple: 'purple', // Assign the purple color to a class name
       },
+      maxWidth: {
+        '28rem': '28rem', // Add a custom maximum width class
+      },
     },
   },
   plugins: [],
