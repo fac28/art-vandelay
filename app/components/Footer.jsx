@@ -4,7 +4,7 @@ import { FaTwitterSquare, FaInstagram, FaGithubAlt } from 'react-icons/fa'
 const Footer = () => {
   return (
 
-    <footer className='flex items-center justify-between bg-secondary py-3 mt-10' style={{
+    <footer className='flex items-center justify-between bg-secondary py-3' style={{
       
       height: '8vh',
     
