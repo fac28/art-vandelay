@@ -1,7 +1,6 @@
 # Art Vandelay
-### Import/Export
 
-
+Art-Vandelay is an E-commerce platform specializing in the world of fine art. Our platform is dedicated to showcasing and trading valuable art paintings, providing art enthusiasts and collectors with a curated selection of exquisite artworks. Explore our collection and discover exceptional pieces from renowned artists.
 <br>
 <br>
 <br>
@@ -12,15 +11,39 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To install and run your app, follow these steps:
+
+- Clone the Repository:
+
+  ```
+  git clone https://github.com/fac28/art-vandelay
+  cd art-vandelay
+
+  ```
+
+- Install Dependencies:
+
 ```
+npm install
+
+```
+
+- Database Setup:
+
+  Ensure you have SQLite installed on your local machine.
+  Create a .env.local file in the root of your project and add the following line:
+
+  ```
+  DB_FILE=db.sqlite
+
+  ```
+
+  Initialize the database and seed data using the following commands:
+
+  ```
+  npm run seed // This will populate the database with seed data.
+
+  ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
