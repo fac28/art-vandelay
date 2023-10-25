@@ -23,10 +23,10 @@ To install and run your app, follow these steps:
 
 - Install Dependencies:
 
-```
-npm install
+  ```
+  npm install
 
-```
+  ```
 
 - Database Setup:
 
@@ -44,6 +44,13 @@ npm install
   npm run seed // This will populate the database with seed data.
 
   ```
+
+- Running the app:
+
+```
+npm run dev
+
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
