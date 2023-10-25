@@ -34,7 +34,7 @@ export default function Home() {
           </p>
           <div className='text-center'>
             <Link
-              className='p-4 text-black bg-white rounded-lg text-center'
+              className='p-4 text-black bg-secondary rounded-lg text-center drop-shadow-lg relative border-secondary active:top-0.5'
               href='/listings/'
             >
               See the collection
