@@ -28,7 +28,6 @@ const Listing = ({ image, artist, date, price, id, name }) => {
           </div>
           <div className='flex items-center py-4 gap-14'>
             <p>{price}</p>
-            <AddToCartButton />
           </div>
         </div>
       </div>
