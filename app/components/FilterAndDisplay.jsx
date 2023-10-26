@@ -7,7 +7,7 @@ import FilterMenu from './FilterMenu.jsx'
 import AddToCartButton from './AddToCartButton.jsx'
 
 export default function FilterAndDisplay({ listings }) {
-  const [maxPrice, setMaxPrice] = useState(100);
+  const [maxPrice, setMaxPrice] = useState(1250000);
 
   return (
     <>

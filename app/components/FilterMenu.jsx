@@ -14,9 +14,9 @@ const FilterMenu = ({maxPrice, setMaxPrice}) => {
         <input
           type="range"
           id="max-price"
-          min="10"
-          max="60"
-          step="5"
+          min="250000"
+          max="1250000"
+          step="50000"
           value={maxPrice}
           onChange={update}
         />
