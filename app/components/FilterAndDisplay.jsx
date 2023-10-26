@@ -24,7 +24,7 @@ export default function FilterAndDisplay({ listings }) {
   )
 }
 
-const Listing = ({ image, artist, date, price, formatted_price, id }) => {
+const Listing = ({ name, image, artist, date, price, formatted_price, id }) => {
   return (
     <div className='flex flex-col items-center'>
       <div className='my-5'>
