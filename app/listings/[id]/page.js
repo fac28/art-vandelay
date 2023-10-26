@@ -33,7 +33,7 @@ const ProductDetails = ({ params }) => {
             <p>
               <small>{product.formatted_price}</small>
             </p>
-            <AddToCartButton />
+            <AddToCartButton product={product} />
           </div>
         </div>
       </div>

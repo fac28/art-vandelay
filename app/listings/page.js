@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link.js'
 import { getAll } from '../_lib/models/listings.js'
-import AddToCartButton from '../components/AddToCartButton.jsx'
 
 export default function Page() {
   const listings = getAll()
@@ -33,7 +32,6 @@ const Listing = ({ image, artist, date, price, id, name }) => {
           </div>
         </div>
       </div>
-
     </div>
   )
 }

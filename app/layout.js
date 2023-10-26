@@ -5,8 +5,11 @@ import './globals.css'
 //Components
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { BasketContextProvider } from './context/BasketContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+})
 
 export const metadata = {
   title: 'Art Vandelay',
@@ -17,9 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <BasketContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </BasketContextProvider>
       </body>
     </html>
   )
