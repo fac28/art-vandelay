@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "DB_FILE=db.sqlite next dev",
+    "dev": "DB_FILE=db.sqlite next dev --turbo",
     "build": "DB_FILE=db.sqlite next build",
     "start": "DB_FILE=db.sqlite next start",
     "seed": "DB_FILE=db.sqlite node app/_lib/database/seed.js",

@@ -12,7 +12,6 @@ const Header = () => {
         <div className='w-11 h-11 bg-black shadow-lg'></div>
         <h1 className='text-2xl'>Art Vandelay</h1>
       </Link>
-      <FilterButton />
       <CartButton />
     </header>
   )
