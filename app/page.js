@@ -26,9 +26,12 @@ export default function Home() {
           />
         </div>
 
-        <div className='mx-auto'>
-          <p className='mb-5 text-white px-10'>new arrivals</p>
-          <p className='mb-10 text-white px-10 text-justify text-xl max-w-28rem'>
+        <div className='mx-auto text'>
+          <p className='mb-5 text-white px-2 italic'>new arrivals</p>
+          <h2 className='text-white text-3xl px-2 pb-2 font-inder font-bold italic'>
+            Fine art just a click away...
+          </h2>
+          <p className='mb-10 text-white px-2 text-justify text-xl max-w-28rem'>
             Handpicked treasures from every corner of the world, especially
             selected for the discerning collector. Stocks limited.
           </p>

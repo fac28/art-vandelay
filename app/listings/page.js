@@ -24,10 +24,10 @@ const Listing = ({ image, artist, date, price, id, name }) => {
           <h2 className='py-4 text-white text-3xl'>{name}</h2>
           <div className='flex gap-5'>
             <p className='text-sm italic'>{artist}</p>
-            <p className='text-sm italic'>{date}</p>
+            <p className='text-sm italic'>c. {date}</p>
           </div>
           <div className='flex items-center py-4 gap-14'>
-            <p>{price}</p>
+            <p className='italic text-sm'>£{price}</p>
           </div>
         </div>
       </div>
