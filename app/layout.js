@@ -5,7 +5,7 @@ import './globals.css'
 //Components
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { BasketContextProvider } from './context/cart.context'
+import { BasketContextProvider } from './context/BasketContext'
 
 const inter = Inter({
   subsets: ['latin'],

@@ -1,14 +1,18 @@
 'use client'
 import React, { useContext } from 'react'
-import { CartContext } from './CartProvider.jsx'
+import { BasketContext } from '../context/BasketContext'
+const RemoveCartButton = ({ product }) => {
+  const { dispatch } = useContext(BasketContext)
+  console.log(product.id);
+  const id = product.id
 
-const RemoveCartButton = ({ id }) => {
-  const { items, removeFromCart } = useContext(CartContext)
+  const onRemoveHandler = () => {
+    dispatch({ type: 'delete', payload: { id } })
+  }
 
-  console.log(items)
   return (
     <>
-      <button onClick={() => removeFromCart(id)} className='button-1'>
+      <button onClick={onRemoveHandler} className='button-1'>
         Remove from cart
       </button>
     </>

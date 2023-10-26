@@ -1,13 +1,14 @@
 'use client'
 import React, { useContext } from 'react'
-import { BasketContext } from '../context/cart.context'
+import { BasketContext } from '../context/BasketContext'
 
 const AddToCartButton = ({ product }) => {
   const { state, dispatch } = useContext(BasketContext)
-  
+
   const addToBasketHandler = (product) => {
-    dispatch({ dispatch: 'Add', article: product })
+    dispatch({ type: 'add', payload: { product } })
   }
+
   return (
     <>
       <button onClick={() => addToBasketHandler(product)} className='button-1'>
