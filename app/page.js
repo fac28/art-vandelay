@@ -6,17 +6,9 @@ export default function Home() {
   const isHomePage = true
 
   return (
-    <main className='bg-purple' style={{ width: '100vw' }}>
+    <main className='bg-purple w-[100vw]'>
       <div className='flex items-center justify-between'>
-        <div
-          style={{
-            width: '60vw',
-            height: '84vh',
-            display: 'block',
-            overflow: 'hidden',
-            position: 'relative',
-          }}
-        >
+        <div className='w-[60vw] h-[84vh] block overflow-hidden relative'>
           <Image
             priority
             src={getRandomImage().image}
